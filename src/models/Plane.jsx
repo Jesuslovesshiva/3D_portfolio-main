@@ -3,7 +3,7 @@ import { useGLTF, useAnimations, Text } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-import planeScene from "../assets/3d/plane.glb";
+import planeScene from "../assets/3d/plane.glb?url";
 
 // Simple waving banner component
 function WavingBanner({ planeRef }) {
