@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // Only set base path for production (GitHub Pages)
-  base: "https://jesuslovesshiva.github.io/3D_portfolio-main/",
-   })
+  base: process.env.NODE_ENV === 'production' ? '/3D_portfolio-main/' : '/', 
+})
